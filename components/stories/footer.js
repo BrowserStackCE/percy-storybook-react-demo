@@ -10,7 +10,7 @@ storiesOf('Footer', module)
     <div className="todoapp">
       <Footer
         completedCount={10}
-        activeCount={4}
+        activeCount={5}
         filter={SHOW_ALL}
         onClearCompleted={action('onClearCompleted')}
         onShow={action('onShow')} />
