@@ -5,8 +5,9 @@ import { storiesOf, action } from '@kadira/storybook';
 storiesOf('MainSection', module)
   .add('all active', () => {
     const todoItems = [
-      { id: 'one', text: 'Item One', completed: false },
+      { id: 'one', text: 'Item One', completed: true },
       { id: 'two', text: 'Item Two', completed: false },
+      { id: 'three', text: 'Item Three', completed: false },
     ];
 
     return getMainSection(todoItems);
@@ -15,7 +16,7 @@ storiesOf('MainSection', module)
     const todoItems = [
       { id: 'one', text: 'Item One', completed: false },
       { id: 'two', text: 'Item Two', completed: true },
-      { id: 'three', text: 'Item Three', completed: false },
+      { id: 'three', text: 'Item Three', completed: true },
     ];
 
     return getMainSection(todoItems);
@@ -24,6 +25,8 @@ storiesOf('MainSection', module)
     const todoItems = [
       { id: 'one', text: 'Item One', completed: true },
       { id: 'two', text: 'Item Two', completed: true },
+      { id: 'three', text: 'Item Three', completed: false },
+      { id: 'four', text: 'Item Four', completed: true },
     ];
 
     return getMainSection(todoItems);
